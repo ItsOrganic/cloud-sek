@@ -108,7 +108,7 @@ docker run -d -p 8080:8080 --name cloudsek-app cloudsek-app
 ```bash
 curl -X POST http://localhost:8080/create \
   -H "Content-Type: application/json" \
-  -d '{"title":"My First Post","description":"This is my first post"}'
+  -d '{"id": "1","title":"My First Post","description":"This is my first post"}'
 ```
 #### Add a Comment
 
