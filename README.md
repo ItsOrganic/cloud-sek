@@ -124,7 +124,7 @@ curl -X POST http://localhost:8080/post/1/comment \
 curl http://localhost:8080/post/1
 ```
 
-#### View Comments (HTML)
+#### View Comments (HTML) (OPEN IN BROWSER)
 
 ```bash
 curl http://localhost:8080/post/1/comments
