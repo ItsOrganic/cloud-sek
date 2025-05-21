@@ -18,12 +18,6 @@ A modern blog application with a Go backend using Gin framework, PostgreSQL data
 └───────────┘     └───────────┘
 Gin (HTTP API) <-> Service Layer <-> Repository <-> PostgreSQL
 ```
-**Key Features:**
-- Markdown support in posts/comments (converted to HTML for rich text display)
-- Swagger API documentation
-- Layered architecture for separation of concerns
-- In-memory caching for improved performance
-
 ## Directory Structure
 
 ```
@@ -142,3 +136,30 @@ docker exec -it cloudsek-post-store psql -U postgres post-comments-service
 | Database connection error | Check `config/config.yaml` and PostgreSQL container status |
 | Docker container issues | Check logs with `docker logs cloudsek-app` |
 | Missing Go dependencies | Run `go mod tidy` to install required packages |
+
+**Key Features:**
+- Markdown support in posts/comments (converted to HTML for rich text display)
+- Swagger API documentation
+- Layered architecture for separation of concerns
+- In-memory caching for improved performance
+
+## Technologies Used
+
+- Go: Backend programming language
+- Gin: Web framework
+- PostgreSQL: Database
+- Swagger: API documentation
+- Docker: Containerization
+- Migrate: Database migration tool
+
+## Design Patterns
+
+- Repository Pattern: Abstracts data access logic
+- Service Layer: Contains business logic
+- Dependency Injection: Promotes loose coupling
+- Middleware Pattern: For request processing pipeline
+
+## Concurrency & Caching
+
+- RWMutex: Used for thread-safe cache operations
+- In-Memory Cache: Fast access to frequently used coupon data
