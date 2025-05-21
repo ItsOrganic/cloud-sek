@@ -81,7 +81,7 @@ db:
 
 ```bash
 go build -o blog-app .
-./blog-app
+./blog-app -config "config/config.yaml"
 ```
 
 ### 5. Build and Run with Docker
