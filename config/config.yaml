@@ -1,0 +1,8 @@
+db:
+  user-name: "postgres"
+  password: "root"
+  host: "172.17.0.2"
+  port: 5432
+  database: "post-comments-service"
+  driver: "postgres"
+  ssl-mode: "disable"
